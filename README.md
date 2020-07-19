@@ -1,2 +1,2 @@
 # AppStore
-![](appStore.gif)
+![](appStoreGif.gif)
