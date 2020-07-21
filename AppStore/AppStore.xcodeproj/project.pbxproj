@@ -18,6 +18,9 @@
 		2CB3077824C38E620049CFA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB3077724C38E620049CFA7 /* Preview Assets.xcassets */; };
 		2CB3077B24C38E620049CFA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB3077924C38E620049CFA7 /* LaunchScreen.storyboard */; };
 		2CB3078324C38E8C0049CFA7 /* appstore.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CB3078224C38E8C0049CFA7 /* appstore.json */; };
+		2CC8835E24C6E4DE00E91F3B /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC8835D24C6E4DE00E91F3B /* TodayView.swift */; };
+		2CC8836024C6EBD300E91F3B /* GetDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC8835F24C6EBD300E91F3B /* GetDate.swift */; };
+		2CC8836224C6F7F900E91F3B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC8836124C6F7F900E91F3B /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		2CB3077A24C38E620049CFA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CB3077C24C38E620049CFA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CB3078224C38E8C0049CFA7 /* appstore.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = appstore.json; sourceTree = "<group>"; };
+		2CC8835D24C6E4DE00E91F3B /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		2CC8835F24C6EBD300E91F3B /* GetDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDate.swift; sourceTree = "<group>"; };
+		2CC8836124C6F7F900E91F3B /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,8 @@
 				2C9A3A3524C3BA2400C83076 /* Bundle.swift */,
 				2C9A3A3124C3B88B00C83076 /* Section.swift */,
 				2C9A3A3324C3B90C00C83076 /* App.swift */,
+				2CC8835F24C6EBD300E91F3B /* GetDate.swift */,
+				2CC8836124C6F7F900E91F3B /* Card.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -76,11 +84,11 @@
 		2CB3076D24C38E610049CFA7 /* AppStore */ = {
 			isa = PBXGroup;
 			children = (
+				2CC8835C24C6E4C200E91F3B /* View */,
 				2C9A3A3024C3B87E00C83076 /* Model */,
 				2CB3078224C38E8C0049CFA7 /* appstore.json */,
 				2CB3076E24C38E610049CFA7 /* AppDelegate.swift */,
 				2CB3077024C38E610049CFA7 /* SceneDelegate.swift */,
-				2CB3077224C38E610049CFA7 /* ContentView.swift */,
 				2CB3077424C38E620049CFA7 /* Assets.xcassets */,
 				2CB3077924C38E620049CFA7 /* LaunchScreen.storyboard */,
 				2CB3077C24C38E620049CFA7 /* Info.plist */,
@@ -95,6 +103,15 @@
 				2CB3077724C38E620049CFA7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2CC8835C24C6E4C200E91F3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CB3077224C38E610049CFA7 /* ContentView.swift */,
+				2CC8835D24C6E4DE00E91F3B /* TodayView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,10 +193,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CB3076F24C38E610049CFA7 /* AppDelegate.swift in Sources */,
+				2CC8836224C6F7F900E91F3B /* Card.swift in Sources */,
 				2C9A3A3624C3BA2400C83076 /* Bundle.swift in Sources */,
 				2C9A3A3224C3B88B00C83076 /* Section.swift in Sources */,
+				2CC8835E24C6E4DE00E91F3B /* TodayView.swift in Sources */,
 				2CB3077124C38E610049CFA7 /* SceneDelegate.swift in Sources */,
 				2C9A3A3424C3B90C00C83076 /* App.swift in Sources */,
+				2CC8836024C6EBD300E91F3B /* GetDate.swift in Sources */,
 				2CB3077324C38E610049CFA7 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AppStore/Preview Content\"";
+				DEVELOPMENT_TEAM = PSWX57M5H9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AppStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -337,6 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AppStore/Preview Content\"";
+				DEVELOPMENT_TEAM = PSWX57M5H9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AppStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
