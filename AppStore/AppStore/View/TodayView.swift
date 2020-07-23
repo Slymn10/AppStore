@@ -37,7 +37,7 @@ struct TouchesHandler: UIViewRepresentable {
         let view = UIView(frame: .zero)
         view.isUserInteractionEnabled = true
         view.addGestureRecognizer(context.coordinator.makeGesture(didBegin: didBeginTouch, didEnd: didEndTouch))
-        return view;
+        return view
     }
 
     func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<TouchesHandler>) {
